@@ -1,0 +1,7 @@
+<input type="text" class="txt" name="Name" placeholder="Name" [(ngModel)]="studentObject.Name">
+<input type="number" class="txt" name="Marks" placeholder="Marks" [(ngModel)]="studentObject.Marks">
+<input type="submit" class="btn" value="{{ btnText }}" (click)="addItem()">
+
+<p  *ngFor="let item of studentDataset">
+	{{ item.Name }} {{item.Marks}}
+</p>
